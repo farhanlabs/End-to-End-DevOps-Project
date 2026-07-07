@@ -13,10 +13,10 @@ spec:
     metadata:
       labels:
         app: my-portfolio
-  spec:
-    containers:
-    - name: react-app
-      image: farhan091/my-portfolio:latest 
-      ports:
-      - containerPort: 80
-      imagePullPolicy: Always
+    spec: #  Sahi hai! Ab isme 4 spaces hain, ye 'template' ke andar aa gaya hai
+      containers:
+      - name: react-app
+        image: farhan091/my-portfolio:latest 
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always
