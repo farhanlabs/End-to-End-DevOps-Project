@@ -8,6 +8,10 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    
+    # 🌟 GADBAD FIX: GitHub Actions ko repo me push karne ki explicit permission do
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout Code
@@ -22,7 +26,6 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    # 1. Image build hogi unique Commit SHA tag ke sath
     - name: Build and Push Docker Image
       uses: docker/build-push-action@v5
       with:
@@ -31,7 +34,6 @@ jobs:
         push: true
         tags: farhan091/my-portfolio:${{ github.sha }}
 
-    # 2. GitHub Actions khud deployment.yaml me naya tag edit karke push karega
     - name: Update Kubernetes Manifest
       run: |
         sed -i "s|image: farhan091/my-portfolio:.*|image: farhan091/my-portfolio:${{ github.sha }}|g" k8s/deployment.yaml
