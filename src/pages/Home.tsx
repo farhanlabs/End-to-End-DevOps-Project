@@ -8,7 +8,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-gray-300">
-          DevOps Engineerr | Cloud Enthusiast | Full Stack Developer
+          DevOps Engineer | Cloud Enthusiast | Full Stack Developer
         </p>
 
         <p className="mt-4 max-w-3xl text-gray-400">
