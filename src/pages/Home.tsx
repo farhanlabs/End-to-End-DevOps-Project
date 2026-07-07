@@ -4,7 +4,7 @@ export default function Home() {
       {/* Hero */}
       <section className="flex min-h-screen flex-col items-center justify-center px-6 text-center">
         <h1 className="text-5xl font-bold">
-          Hi, I'm <span className="text-blue-500">Md Farhan Rza</span>
+          Hi, I'm <span className="text-blue-500">Md Farhan Raza</span>
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg text-gray-300">
