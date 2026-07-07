@@ -16,7 +16,7 @@ spec:
     spec: #  Sahi hai! Ab isme 4 spaces hain, ye 'template' ke andar aa gaya hai
       containers:
       - name: react-app
-        image: farhan091/my-portfolio:d15f02c277a75253f9c6286bc48e4ed8fff6dd54
+        image: farhan091/my-portfolio:d8fb4851d3c23fc91e6742357f1cbbacadccc56b
         ports:
         - containerPort: 80
         imagePullPolicy: Always
