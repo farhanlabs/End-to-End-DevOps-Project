@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Home() {
   // Pure Inline Premium Dark Theme Design Styles
   const styles = {
